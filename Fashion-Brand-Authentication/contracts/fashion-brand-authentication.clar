@@ -50,7 +50,7 @@
       owner: tx-sender,
       name: name,
       verified: false,
-      registration-time: block-height,
+      registration-time: stacks-block-height,
       products-count: u0
     })
     (map-set brand-owners tx-sender brand-id)
@@ -75,7 +75,7 @@
       brand-id: brand-id,
       product-name: product-name,
       product-code: product-code,
-      manufacture-date: block-height,
+      manufacture-date: stacks-block-height,
       authentication-hash: authentication-hash,
       verified: true
     })
@@ -95,7 +95,7 @@
     (map-set counterfeit-reports report-id {
       reporter: tx-sender,
       product-id: product-id,
-      report-time: block-height,
+      report-time: stacks-block-height,
       verified: false,
       reward-claimed: false
     })
